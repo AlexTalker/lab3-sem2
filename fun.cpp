@@ -1,6 +1,6 @@
 #include "fun.h"
 
-Fifo& operator<<(Fifo& f, int const& i){
+Fifo& operator<<(Fifo& f, int& i){
     f.arr[f.last] = i;
     f.last++;
     return f;

@@ -5,7 +5,7 @@ using namespace std;
 int main(void)
 {
     int b;
-    Fifo a;
+    Fifo a = Fifo();
     cin >> b;
     a<<b;
     cout << b << endl;
