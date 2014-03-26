@@ -16,7 +16,7 @@ struct Fifo {
 };
 Fifo& operator<<(Fifo&, int&);
 Fifo& operator>>(Fifo&, int&);
-double square(Triangle t);
+double area(Triangle t);
 Triangle& operator+(Triangle&, Vector&);
 bool operator<(Triangle&, Triangle&);
 bool operator>(Triangle&, Triangle&);

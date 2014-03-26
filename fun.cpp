@@ -11,19 +11,19 @@ Triangle& operator+(Triangle& t, Vector& v){
     return t;
 }
 bool operator<(Triangle& a, Triangle& b){
-    return (square(a) < square(b));
+    return (area(a) < area(b));
 }
 bool operator>(Triangle& a, Triangle& b){
-    return (square(a) > square(b));
+    return (area(a) > area(b));
 }
 bool operator==(Triangle& a, Triangle& b){
-    return (square(a) == square(b));
+    return (area(a) == area(b));
 }
 bool operator!=(Triangle& a, Triangle& b){
-    return (square(a) != square(b));
+    return (area(a) != area(b));
 }
 
-double square(Triangle t){
+double area(Triangle t){
     return std::abs((t.b.x - t.a.x) * (t.c.y - t.a.y) - (t.c.x - t.a.x)*(t.b.y- t.a.y))/2.0;
 }
 Fifo& operator<<(Fifo& f, int& i){

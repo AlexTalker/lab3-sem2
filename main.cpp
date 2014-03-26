@@ -13,16 +13,16 @@ int main(void)
     if (i > 0 && i <= 100){
         for(;i > 0; i--){
             cin >> j;
-            f << j;
+            operator<<(f , j);
         }
     }
     cin >> t.a.x >> t.a.y >> t.b.x >> t.b.y >> t.c.x >> t.c.y;
     cin >> u.a.x >> u.a.y >> u.b.x >> u.b.y >> u.c.x >> u.c.y;
     cin >> v.x >> v.y;
-    cout << (t < u) << endl <<
-            (t > u) << endl <<
-            (t == u) << endl <<
-            (t != u) << endl;
+    cout << operator<(t,u) << endl <<
+            operator>(t,u) << endl <<
+            operator==(t, u) << endl <<
+            operator!=(t, u) << endl;
     t = t + v;
     cout << (t < u) << endl <<
             (t > u) << endl <<
